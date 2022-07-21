@@ -8,9 +8,8 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>pet-clinic-data</artifactId>
-
-
-	<!-- adding this to let the spring know to skip this jar packaging before parent and web -->
+	
+	<!-- this is get the web jar built first and avoid building fat jar -->
 	<properties>
 		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
 	</properties>
